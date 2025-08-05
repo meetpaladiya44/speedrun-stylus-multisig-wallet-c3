@@ -5,6 +5,7 @@ extern crate alloc;
 /// Import items from the SDK. The prelude contains common traits and macros.
 use stylus_sdk::{contract, evm, msg, prelude::*, call::{Call, call}, alloy_primitives::{Address, U256}, abi::Bytes};
 use alloy_sol_types::sol;
+use stylus_cache_sdk::{is_contract_cacheable};
 
 // Define some events using the Solidity ABI.
 sol! {
@@ -124,6 +125,9 @@ impl MultiSig {
     }
 
 
+    pub fn is_cacheable(&self) -> bool {
+        is_contract_cacheable()
+    }
     // The `initialize` method initializes the contract with the owners and the number of confirmations required.
     pub fn initialize(&mut self, owners: Vec<Address>, num_confirmations_required: U256) -> Result<(), MultiSigError> {
         // The owners must not be initialized.
