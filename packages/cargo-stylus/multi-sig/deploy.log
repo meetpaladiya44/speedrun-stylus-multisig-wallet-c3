@@ -1,0 +1,10 @@
+🌐 Checking connection to Arbitrum Sepolia...
+✅ Connected to Arbitrum Sepolia.
+🚀 Deploying Multi-Sig Stylus contract...
+✅ Multi-Sig contract deployed successfully!
+📄 Transaction Hash: 0x7fef16253f1f611a3f03e63321c8ded37e05d5efc67103db991c7f09586d2b9a
+🏠 Contract Address: 0x7e51e786261e0c841ea19e209bfb857d32ee629d
+🛠️ Generating ABI for the Multi-Sig contract...
+✅ ABI saved to stylus-contract.abi
+📁 Deployment info saved to build/stylus-deployment-info.json
+🎉 Multi-Sig contract deployment completed successfully!
